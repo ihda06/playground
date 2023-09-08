@@ -1,4 +1,4 @@
-import { BreakLine } from "@/app/commons/elements/BreakLine";
+import { BreakLine } from "@/commons/elements/BreakLine";
 import { Profile } from "./profile";
 import { ToggleTheme } from "./toggleTheme/ToggleTheme";
 import { Navigation } from "./Navigation";

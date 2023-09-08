@@ -1,7 +1,7 @@
-import { MENU_ITEMS, SOCMED } from "@/app/constant/menu"
+import { MENU_ITEMS, SOCMED } from "@/commons/constants/menu"
 import { Menu } from "./Menu"
 import { useEffect } from "react"
-import { BreakLine } from "@/app/commons/elements/BreakLine"
+import { BreakLine } from "@/commons/elements/BreakLine"
 import { SocialMedia } from "./SocialMedia"
 
 export const Navigation = () => {
