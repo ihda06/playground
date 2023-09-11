@@ -11,7 +11,7 @@ export const Career = () => {
     <section className="space-y-6 scrollbar-hidden">
       <div className="flex flex-col gap-2 text-neutral-600">
         <SectionHeader title="Career" icon={<BiBriefcase />} />
-        <div className="flex justify-between text-neutral-600">
+        <div className="flex justify-between text-neutral-600 dark:text-neutral-400">
           <span>My Professional Career Journey</span>
           <div className="flex items-center gap-2">
             <HiOutlineDownload />

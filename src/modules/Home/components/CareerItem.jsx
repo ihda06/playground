@@ -15,8 +15,8 @@ export const CareerItem = ({
   return (
     <Card className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-default">
       <Image height={55} width={55} src={companyImg}></Image>
-      <div className="flex flex-col gap-1 text-neutral-500">
-        <h4 className="text-xl text-neutral-600 font-medium">{position}</h4>
+      <div className="flex flex-col gap-1 text-neutral-500 dark:text-neutral-300">
+        <h4 className="text-xl text-neutral-600 font-medium dark:text-white">{position}</h4>
         <div className="flex gap-1 text-sm">
           <Link href={companyUrl} className="underline">{company}</Link>
           <span>•</span>

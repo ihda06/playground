@@ -42,13 +42,13 @@ export const SkillList = [
   {
     title: "Git",
     icon: <AiOutlineGithub size="100%" />,
-    color: "text-slate-900",
+    color: "",
     isShow: true,
   },
   {
     title: "NextJS",
     icon: <SiNextdotjs size="100%" />,
-    color: "text-slate-900",
+    color: "",
     isShow: true,
   },
   {
