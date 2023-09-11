@@ -1,3 +1,5 @@
+"use client"
+
 import { BreakLine } from "@/commons/elements/BreakLine";
 import { Profile } from "./Profile";
 import { Navigation } from "./Navigation";

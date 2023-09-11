@@ -1,6 +1,5 @@
 import { MENU_ITEMS, SOCMED } from "@/commons/constants/menu"
 import { Menu } from "./Menu"
-import { useEffect } from "react"
 import { BreakLine } from "@/commons/elements/BreakLine"
 import { SocialMedia } from "./SocialMedia"
 

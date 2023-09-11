@@ -1,3 +1,5 @@
+"use client"
+
 import useIsMobile from "@/hooks/useIsMobile";
 import { MobileMenuButton } from "./mobilemenubutton/MobileMenuButton";
 import { ProfileHeader } from "./ProfileHeader";

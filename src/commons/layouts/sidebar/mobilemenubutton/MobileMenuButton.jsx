@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react";
 import "./style.scss"
 import { useMenu } from "@/context/menu";
 

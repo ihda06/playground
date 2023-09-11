@@ -1,9 +1,7 @@
-"use client";
-
 import "./globals.css";
 import { Lato } from "next/font/google";
 import { Layouts } from "@/commons/layouts/Index";
-import { ThemeProvider } from "next-themes";
+import ThemeProviderContext from "@/context/theme";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -19,9 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={lato.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProviderContext>
           <Layouts>{children}</Layouts>
-        </ThemeProvider>
+        </ThemeProviderContext>
       </body>
     </html>
   );
