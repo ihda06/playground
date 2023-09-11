@@ -4,7 +4,7 @@ export const SocialMedia = ({ items }) => {
   return (
     <div className="flex flex-col space-y-1">
       <div className="text-sm ml-2 mt-1 mb-2 text-neutral-600 dark:text-neutral-500 font-sora">
-        Let's Connect
+        Let&apos;s Connect
       </div>
       <div className="flex justify-around space-x-6 lg:justify-between px-5 pt-2">
         {items.map((item, index) => (

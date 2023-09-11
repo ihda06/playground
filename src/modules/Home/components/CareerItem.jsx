@@ -14,7 +14,7 @@ export default function CareerItem({
 }) {
   return (
     <Card className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-default">
-      <Image height={55} width={55} src={companyImg}></Image>
+      <Image height={55} width={55} src={companyImg} alt="companyimg"></Image>
       <div className="flex flex-col gap-1 text-neutral-500 dark:text-neutral-300">
         <h4 className="text-xl text-neutral-600 font-medium dark:text-white">
           {position}
