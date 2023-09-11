@@ -2,14 +2,16 @@
 
 import { useState } from "react";
 import "./style.scss"
+import { useMenu } from "@/context/menu";
 
 export const MobileMenuButton = () => {
-  const [expandMenu, setExpandMenu] = useState(false);
+  const toggleMenu = useMenu((state)=> state.toggleMenu)
+  const expandMenu = useMenu((state)=> state.isOpen)
   const menuSpanData = [{ index: 1 }, { index: 2 }, { index: 3 }];
 
   const expandMenuClick = ()=>{
     console.log(expandMenu)
-    setExpandMenu(!expandMenu)
+    toggleMenu()
   }
 
   return (

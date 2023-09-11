@@ -4,8 +4,8 @@ import { Navigation } from './Navigation'
 
 export const MobileMenu = () => {
   return (
-    <div>
-        <BreakLine></BreakLine>
+    <div className="">
+        <BreakLine className="mt-2"></BreakLine>
         <Navigation></Navigation>
     </div>
   )

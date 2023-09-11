@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export const MenuItem = ({ item, className }) => {
+export const MenuItem = ({ item, className="" }) => {
   const pathName = usePathname();
   const url = new URL(item.href, "http://localhost:3000/");
   const active =
