@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Lato } from "next/font/google";
-import { Layouts } from "@/commons/layouts/Index";
+import { Layouts } from "@/commons/layouts";
 import ThemeProviderContext from "@/context/theme";
 
 const lato = Lato({
