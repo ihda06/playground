@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 import { BiBriefcase } from "react-icons/bi";
 import { HiOutlineDownload } from "react-icons/hi";
-import { CareerItem } from "./CareerItem";
-import { CareerList } from "@/commons/constants/Career";
+import CareerItem from "./CareerItem";
+import { CareerList } from "@/commons/constants/career";
 
-export const Career = () => {
+export default function Career() {
   return (
     <section className="space-y-6 scrollbar-hidden">
       <div className="flex flex-col gap-2 text-neutral-600">
@@ -28,4 +28,4 @@ export const Career = () => {
       </div>
     </section>
   );
-};
+}

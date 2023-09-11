@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sidebar } from "./sidebar";
+import { Sidebar } from "./sidebar/Index";
 
 export const Layouts = ({ children }) => {
   return (

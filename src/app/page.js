@@ -1,6 +1,6 @@
 
 
-import { Container } from "@/commons/components/container";
+import { Container } from "@/commons/components/Container";
 import Home from "@/modules/Home";
 
 

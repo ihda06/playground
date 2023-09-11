@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import { Lato } from "next/font/google";
-import { Layouts } from "@/commons/layouts/index";
+import { Layouts } from "@/commons/layouts/Index";
 import { ThemeProvider } from "next-themes";
 
 const lato = Lato({

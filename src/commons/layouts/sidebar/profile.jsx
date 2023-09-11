@@ -1,6 +1,6 @@
 import useIsMobile from "@/hooks/useIsMobile";
 import { MobileMenuButton } from "./mobilemenubutton/MobileMenuButton";
-import { ProfileHeader } from "./profileHeader";
+import { ProfileHeader } from "./ProfileHeader";
 import { Status } from "./status";
 import { ToggleTheme } from "./toggleTheme/ToggleTheme";
 import { useMenu } from "@/context/menu";

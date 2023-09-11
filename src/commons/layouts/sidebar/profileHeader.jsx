@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { MdVerified } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 
 export const ProfileHeader = ({expandMenu, imageSize}) => {
@@ -12,10 +13,10 @@ export const ProfileHeader = ({expandMenu, imageSize}) => {
         <h1 className="flex-grow text-lg dark:text-white font-semibold lg:text-xl">Ihda Anwari</h1>
         <MdVerified className="text-sky-400"></MdVerified>
       </div>
-      <div className="hidden lg:flex items-center gap-1 ">
+      <Link href="https://www.instagram.com/ihda.anwari" className="hidden lg:flex items-center gap-1 ">
         <FaInstagram />
         <h5>ihda.anwari</h5>
-      </div>
+      </Link>
     </div>
   );
 };

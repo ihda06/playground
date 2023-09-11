@@ -1,5 +1,5 @@
 import { BreakLine } from "@/commons/elements/BreakLine";
-import { Profile } from "./profile";
+import { Profile } from "./Profile";
 import { Navigation } from "./Navigation";
 import useIsMobile from "@/hooks/useIsMobile";
 
