@@ -6,7 +6,7 @@ export default function Introduction() {
     <section className="bg-cover bg-no-repeat space-y-2">
       <div className="flex w-full justify-between items-center">
         <div className="flex flex-col">
-          <h3 className="text-2xl lg:text-3xl font-semibold dark:text-white">Hi, I&apos;m Ihda Anwari</h3>
+          <h3 className="text-2xl lg:text-3xl font-semibold text-neutral-950 dark:text-white">Hi, I&apos;m Ihda Anwari</h3>
           <div className="space-y-4">
             <ul className="flex flex-col pt-2 lg:flex-row lg:gap-8 list-disc ml-5 gap-1 text-neutral-500 dark:text-neutral-400">
               <li>Software Engineer </li>

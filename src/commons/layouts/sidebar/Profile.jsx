@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import useIsMobile from "@/hooks/useIsMobile";
 import { MobileMenuButton } from "./mobilemenubutton/MobileMenuButton";
@@ -7,6 +7,7 @@ import { ToggleTheme } from "./toggleTheme/ToggleTheme";
 import { useMenu } from "@/context/menu";
 import { MobileMenu } from "./MobileMenu";
 import { Status } from "./Status";
+import { AnimatePresence } from "framer-motion";
 
 export const Profile = () => {
   const isMobile = useIsMobile();
@@ -40,10 +41,14 @@ export const Profile = () => {
         )}
       </div>
 
-      {isMobile && isOpen && (
-        <>
-          <MobileMenu></MobileMenu>
-        </>
+      {isMobile && (
+        <AnimatePresence>
+          {isOpen && (
+            <>
+              <MobileMenu></MobileMenu>
+            </>
+          )}
+        </AnimatePresence>
       )}
     </div>
   );

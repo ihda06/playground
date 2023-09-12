@@ -11,11 +11,11 @@ export default function Career() {
     <section className="space-y-6 scrollbar-hidden">
       <div className="flex flex-col gap-2 text-neutral-600">
         <SectionHeader title="Career" icon={<BiBriefcase />} />
-        <div className="flex justify-between text-neutral-600 dark:text-neutral-400">
+        <div className="flex flex-col lg:flex-row gap-2 justify-between text-neutral-600 dark:text-neutral-400">
           <span>My Professional Career Journey</span>
           <div className="flex items-center gap-2">
             <HiOutlineDownload />
-            <Link href="./cv.pdf" download>
+            <Link href="cv.pdf" download="resume.pdf">
               Download Resume
             </Link>
           </div>
