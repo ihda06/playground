@@ -9,7 +9,6 @@ export const MobileMenuButton = () => {
   const menuSpanData = [{ index: 1 }, { index: 2 }, { index: 3 }];
 
   const expandMenuClick = ()=>{
-    console.log(expandMenu)
     toggleMenu()
   }
 

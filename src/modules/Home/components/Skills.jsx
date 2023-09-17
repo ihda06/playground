@@ -13,7 +13,7 @@ export default function Skills() {
           My Coding Skill
         </span>
       </div>
-      <div className="flex gap-3 dark:text-neutral-100">
+      <div className="flex gap-3 text-neutral-900 dark:text-neutral-100">
         {filteredSkill.map((skill, index) => (
           <div key={index} className={"w-8 " + skill.color}>
             {skill.icon}
