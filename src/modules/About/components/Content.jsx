@@ -4,8 +4,8 @@ export default function Content({}) {
   return (
     <>
       <SectionHeader title="About" />
-      <h5 className="text-neutral-600">A little story about me</h5>
-      <div className="mt-5 space-y-5" align="justify">
+      <h5 className="text-neutral-600 dark:text-neutral-300">A little story about me</h5>
+      <div className="mt-5 space-y-5 text-neutral-800 dark:text-neutral-300" align="justify">
         <p>
           Hi there! I&apos;m Ihda Anwari, a passionate front-end software developer
           with expertise in React.js, Vue.js, and Laravel. I specialize in
