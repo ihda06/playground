@@ -7,7 +7,7 @@ export default function Content({}) {
       <h5 className="text-neutral-600">A little story about me</h5>
       <div className="mt-5 space-y-5" align="justify">
         <p>
-          Hi there! I&apos;m [Your Name], a passionate front-end software developer
+          Hi there! I&apos;m Ihda Anwari, a passionate front-end software developer
           with expertise in React.js, Vue.js, and Laravel. I specialize in
           creating captivating user interfaces and seamless web experiences that
           leave a lasting impact. When I&apos;m not coding, I&apos;m out exploring the
