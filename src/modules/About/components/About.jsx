@@ -2,7 +2,7 @@ import { Container } from "@/commons/components/Container";
 import Header from "./Header";
 import { BreakLine } from "@/commons/elements/BreakLine";
 import Content from "./Content";
-import Slider from "./slider/Slider";
+import Gallery from "./Gallery";
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
       <Header></Header>
       <BreakLine className="mt-5"></BreakLine>
       <Content />
-      <Slider className=" mt-7"/>
+      <Gallery className="py-7 px-3" />
     </Container>
   );
 }
