@@ -1,9 +1,13 @@
+"use client"
+
 import { Card } from "@/commons/elements/Card";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function CareerItem({
+  routeName,
   company,
   companyUrl,
   location,
@@ -12,9 +16,13 @@ export default function CareerItem({
   period,
   time,
 }) {
+  const router = useRouter();
   return (
-    <Card className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-default">
-      <Image height={55} width={55} src={companyImg} alt="companyimg"></Image>
+    <Card
+      className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-pointer "
+      onClick={() => router.push("experiences/"+routeName)}
+    >
+      <Image height={55} width={70} src={companyImg} alt="companyimg" className=" object-contain h-full px-2 rounded-lg dark:bg-white"></Image>
       <div className="flex flex-col gap-1 text-neutral-500 dark:text-neutral-300">
         <h4 className="text-xl text-neutral-600 font-medium dark:text-white">
           {position}

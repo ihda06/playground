@@ -13,7 +13,7 @@ export const ProfileHeader = ({expandMenu, imageSize}) => {
         <h1 className="flex-grow text-lg text-neutral-950 dark:text-white font-semibold lg:text-xl">Ihda Anwari</h1>
         <MdVerified className="text-sky-400"></MdVerified>
       </div>
-      <Link href="https://www.instagram.com/ihda.anwari" className="hidden lg:flex items-center gap-1 ">
+      <Link href="https://www.instagram.com/ihda.anwari" className="hidden lg:flex items-center gap-1 text-neutral-900 dark:text-neutral-200">
         <FaInstagram />
         <h5>ihda.anwari</h5>
       </Link>
