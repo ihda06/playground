@@ -5,6 +5,7 @@ import Header from "./Header";
 import Content from "./Content";
 import getExperiences from "@/utils/getExperiences";
 import NotFound from "../../../commons/components/NotFound";
+import { Container } from "@/commons/components/Container";
 
 export default function Page({ params }) {
   const { slug } = params;
@@ -14,9 +15,11 @@ export default function Page({ params }) {
   if (details) {
     return (
       <>
-        <Header {...data}></Header>
-        <BreakLine></BreakLine>
-        <Content {...details}></Content>
+        <Container>
+          <Header {...data}></Header>
+          <BreakLine></BreakLine>
+          <Content {...details}></Content>
+        </Container>
       </>
     );
   } else {
