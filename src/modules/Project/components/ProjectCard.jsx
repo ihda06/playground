@@ -20,6 +20,7 @@ export default function ProjectCard({
           width={400}
           height={100}
           className="w-full rounded-t-lg h-[185px] md:h-[185px] lg:h-[195px] object-cover object-top "
+          alt="preview-project"
         ></Image>
 
         <div className="flex flex-col justify-between h-44 p-6">
@@ -32,8 +33,8 @@ export default function ProjectCard({
             </h2>
           </div>
           <div className="flex gap-3 items-center">
-            {tools.map((icon, idx) => {
-              return <div key={idx}>{icon}</div>;
+            {tools.map((item, idx) => {
+              return <div key={idx}>{item.icon}</div>;
             })}
             <span className="dark:text-white">|</span>
 
