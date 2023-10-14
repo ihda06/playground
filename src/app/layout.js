@@ -2,6 +2,7 @@ import "./globals.css";
 import { Lato } from "next/font/google";
 import { Layouts } from "@/commons/layouts";
 import ThemeProviderContext from "@/context/theme";
+import NextTopLoader from "nextjs-toploader";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -17,6 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={lato.className}>
+        <NextTopLoader
+          color="#4b95de"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={true}
+          easing="ease"
+          speed={200}
+          shadow="0 0 10px #05b6d3,0 0 5px #45c6c0"
+        />
         <ThemeProviderContext>
           <Layouts>{children}</Layouts>
         </ThemeProviderContext>

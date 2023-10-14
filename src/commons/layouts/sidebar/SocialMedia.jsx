@@ -8,7 +8,7 @@ export const SocialMedia = ({ items }) => {
       </div>
       <div className="flex justify-around space-x-6 lg:justify-between px-5 pt-2">
         {items.map((item, index) => (
-          <Link key={index} href={item.href}>
+          <Link key={index} href={item.href} aria-label="Visit">
             <div
               className="text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 hover:dark:text-neutral-300 lg:hover:scale-110 transition duration-300"
             >

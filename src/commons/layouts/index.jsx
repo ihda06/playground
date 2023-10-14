@@ -17,7 +17,7 @@ export const Layouts = ({ children }) => {
         </div>
       </div>
       <div className="flex gap-1 justify-center border border-t-neutral-200 dark:text-neutral-400 py-3">
-        This website inspired by <Link href="https://codebayu.com">codebayu.com</Link>
+        This website inspired by <Link href="https://codebayu.com" aria-label="link to codebayu">codebayu.com</Link>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export const ToggleTheme = () => {
     };
 
   return (
-    <div className="toggle-theme">
+    <div className="toggle-theme flex items-center">
       <input
         checked={resolvedTheme === "dark"}
         type="checkbox"

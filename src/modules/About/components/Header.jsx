@@ -11,6 +11,7 @@ export default function Header() {
         sizes="100vw"
         className="w-full hover:scale-105 h-60 duration-1000 rounded-xl object-cover object-[50%__75%]"
         alt="header"
+        priority
       ></Image>
     </div>
   );

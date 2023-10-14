@@ -1,4 +1,5 @@
 import Button from "@/commons/components/Button";
+import Tooltip from "@/commons/components/Tooltip";
 import { Card } from "@/commons/elements/Card";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,7 +35,7 @@ export default function ProjectCard({
           </div>
           <div className="flex gap-3 items-center">
             {tools.map((item, idx) => {
-              return <div key={idx}>{item.icon}</div>;
+              return <Tooltip key={idx} content={item.title}>{item.icon}</Tooltip>;
             })}
             <span className="dark:text-white">|</span>
 

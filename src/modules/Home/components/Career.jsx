@@ -13,12 +13,12 @@ export default function Career() {
         <SectionHeader title="Career" icon={<BiBriefcase />} />
         <div className="flex flex-col lg:flex-row gap-2 justify-between text-neutral-600 dark:text-neutral-400">
           <span>My Professional Career Journey</span>
-          <div className="flex items-center gap-2">
-            <HiOutlineDownload />
-            <Link href="cv.pdf" download="resume.pdf">
+          <Link href="Resume-Ihda_Anwari.pdf" aria-label="download">
+            <div className="flex items-center gap-2 hover:scale-105 duration-300">
+              <HiOutlineDownload />
               Download Resume
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-4">
