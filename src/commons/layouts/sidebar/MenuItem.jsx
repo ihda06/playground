@@ -18,7 +18,7 @@ export const MenuItem = ({ item, className="" }) => {
   }
 
   return (
-    <Link href={item.href} onClick={handleClick}>
+    <Link href={item.href} onClick={handleClick} aria-label="to selected menu">
       <div
         className={`flex items-center gap-2 py-2 px-4 text-neutral-700 dark:text-neutral-400 hover:text-neutral-900 hover:dark:text-neutral-300 rounded-lg hover:dark:lg:bg-neutral-800 hover:lg:bg-neutral-200 hover:lg:rounded-lg lg:transition-all lg:duration-300 ${active} ${className}`}
       >

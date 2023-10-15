@@ -2,11 +2,13 @@ import { SectionHeader } from "@/commons/elements/SectionHeader";
 import { GoTasklist } from "react-icons/go";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsBuildingsFill } from "react-icons/bs";
+import Tooltip from "@/commons/components/Tooltip";
+import { useEffect } from "react";
 
 export default function Content({ about, jobdesks, tools }) {
   return (
     <>
-      <div className="flex gap-4 h-auto mb-3">
+      <div className="flex flex-col lg:flex-row gap-4 h-auto mb-3">
         <div className="basis-4/5 border rounded-lg h-full p-5 space-y-5">
           <div className="space-y-3">
             <SectionHeader
@@ -39,10 +41,14 @@ export default function Content({ about, jobdesks, tools }) {
             <BiCodeAlt size="20px"></BiCodeAlt>
             <h1 className="  font-bold">Tools</h1>
           </div>
-          <div className="flex gap-3 mt-5">
-            {tools.map((item, idx) => (
-              <div key={idx}>{item.icon}</div>
-            ))}
+          <div className="flex gap-3 mt-3">
+            {tools.map((item, idx) => {
+              return (
+                <Tooltip key={idx} content={item.title} position="bottom">
+                  <div>{item.icon}</div>
+                </Tooltip>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Card } from "@/commons/elements/Card";
 import Image from "next/image";
@@ -16,29 +16,35 @@ export default function CareerItem({
   period,
   time,
 }) {
-  const router = useRouter();
   return (
-    <Card
-      className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-pointer "
-      onClick={() => router.push("experiences/"+routeName)}
-    >
-      <Image height={55} width={70} src={companyImg} alt="companyimg" className=" object-contain h-full px-2 rounded-lg dark:bg-white"></Image>
-      <div className="flex flex-col gap-1 text-neutral-500 dark:text-neutral-300">
-        <h4 className="text-xl text-neutral-600 font-medium dark:text-white">
-          {position}
-        </h4>
-        <div className="flex gap-1 text-sm">
-          <Link href={companyUrl} className="underline">
-            {company}
-          </Link>
-          <span>•</span>
-          <span>{location}</span>
+    <Link href={"/experiences/" + routeName}>
+      <Card
+        className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-pointer "
+      >
+        <Image
+          height={55}
+          width={70}
+          src={companyImg}
+          alt="companyimg"
+          className=" object-contain h-full px-2 rounded-lg dark:bg-white"
+        ></Image>
+        <div className="flex flex-col gap-1 text-neutral-500 dark:text-neutral-300">
+          <h4 className="text-xl text-neutral-600 font-medium dark:text-white">
+            {position}
+          </h4>
+          <div className="flex gap-1 text-sm">
+            <Link href={companyUrl} className="underline">
+              {company}
+            </Link>
+            <span>•</span>
+            <span>{location}</span>
+          </div>
+          <div className="text-sm pt-1">
+            <h5>{period}</h5>
+            <h5>~ {time} Months</h5>
+          </div>
         </div>
-        <div className="text-sm pt-1">
-          <h5>{period}</h5>
-          <h5>~ {time} Months</h5>
-        </div>
-      </div>
-    </Card>
+      </Card>
+    </Link>
   );
 }

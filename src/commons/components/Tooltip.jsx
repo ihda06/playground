@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Tippy from "@tippyjs/react/headless";
 import styled from "styled-components";
@@ -12,7 +12,7 @@ const Box = styled(motion.div)`
   font-size: 10px;
 `;
 
-export default function Tooltip({content, children}) {
+export default function Tooltip({ content, children, position="top" }) {
   const springConfig = { damping: 15, stiffness: 300 };
   const initialScale = 0.5;
   const opacity = useSpring(0, springConfig);
@@ -24,7 +24,7 @@ export default function Tooltip({content, children}) {
   }
 
   function onHide({ unmount }) {
-    const cleanup = scale.onChange(value => {
+    const cleanup = scale.onChange((value) => {
       if (value <= initialScale) {
         cleanup();
         unmount();
@@ -37,7 +37,8 @@ export default function Tooltip({content, children}) {
 
   return (
     <Tippy
-      render={attrs => (
+      placement={position}
+      render={(attrs) => (
         <Box style={{ scale, opacity }} {...attrs}>
           {content}
         </Box>
