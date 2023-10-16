@@ -37,7 +37,7 @@ export default function ProjectCard({
             {tools.map((item, idx) => {
               return <Tooltip key={idx} content={item.title}>{item.icon}</Tooltip>;
             })}
-            <span className="dark:text-white">|</span>
+            <span className="text-neutral-500 dark:text-white">|</span>
 
             <Link href={projectLink}>
               <Button className="bg-sky-500 dark:bg-sky-400 text-neutral-100">

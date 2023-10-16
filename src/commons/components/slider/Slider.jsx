@@ -16,15 +16,10 @@ export default function Slider({ className = "", image }) {
 
   const handleClickNavigation = (idx) => {
     const elementScroll = ref.current;
-    const { scrollHeight, scrollTop, clientHeight } = elementScroll;
-    const scroll = scrollHeight - scrollTop - clientHeight;
-    if (active > idx) {
-      const result = scroll - idx * (isMobile ? 224 : 670);
-      elementScroll.scrollLeft = result;
-    } else {
-      const result = scroll + idx * (isMobile ? 224 : 670);
-      elementScroll.scrollLeft = result;
-    }
+    
+    const result = idx * (isMobile ? 224 : 670);
+    elementScroll.scrollLeft = result;
+    
     setActive(idx);
   };
 
