@@ -57,12 +57,12 @@ export default function Slider({ className = "", image }) {
         }
         ref={ref}
         onMouseDown={(e) => handleMouseDown(e)}
-        onMouseUp={() => setIsDown(false)}
-        onMouseLeave={() => setIsDown(false)}
-        onMouseMove={(e) => handleMouseMove(e)}
-        onTouchMove={(e) => handleMouseMove(e)}
         onTouchStart={(e)=> handleMouseDown(e)}
+        onMouseUp={() => setIsDown(false)}
         onTouchEnd={() => setIsDown(false)}
+        onMouseMove={(e) => handleMouseMove(e)}
+        onTouchMove={() => handleTouchMove()}
+        onMouseLeave={() => setIsDown(false)}
       >
         {image.map((item, idx) => (
           <SliderItem key={idx} {...item}></SliderItem>
