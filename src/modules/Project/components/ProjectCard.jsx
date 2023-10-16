@@ -26,7 +26,7 @@ export default function ProjectCard({
 
         <div className="flex flex-col justify-between h-44 p-6">
           <div className=" inline-block">
-            <h1 className="font-bold capitalize dark:text-neutral-200">
+            <h1 className="font-bold capitalize text-neutral-900 dark:text-neutral-200">
               {title}
             </h1>
             <h2 className="text-sm text-neutral-600 dark:text-neutral-400">

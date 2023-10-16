@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
       </head>
       <body className={lato.className}>
         <NextTopLoader

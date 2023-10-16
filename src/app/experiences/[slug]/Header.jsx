@@ -13,7 +13,7 @@ export default function Header({
   return (
     <>
       <BackButton />
-      <div className="p-5 mt-4 flex min-h-[128px] border rounded-xl justify-between">
+      <div className="p-5 mt-4 flex border rounded-xl justify-between">
         <div className="flex gap-5">
           <Image
             src={companyImg}

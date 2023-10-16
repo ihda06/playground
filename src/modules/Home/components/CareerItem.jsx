@@ -19,7 +19,7 @@ export default function CareerItem({
   return (
     <Link href={"/experiences/" + routeName}>
       <Card
-        className="flex items-center gap-5 py-4 px-6 hover:scale-105 transition duration-300 cursor-pointer "
+        className="flex items-center gap-5 py-4 px-6 hover:scale-105 h-[170px] lg:h-auto transition duration-300 cursor-pointer "
       >
         <Image
           height={55}
